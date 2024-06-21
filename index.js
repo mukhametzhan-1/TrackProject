@@ -64,7 +64,7 @@ const chatId = msg.chat.id;
 
  
 
-if(msg?.reply_to_message?.text=="🌐 Enter Your URL"){
+if(msg && msg.reply_to_message && msg.reply_to_message.text === "🌐 Enter Your URL"){
  createLink(chatId,msg.text); 
 }
   
